@@ -22,4 +22,4 @@ if __name__ == "__main__":
     with open(f"{argv[1]}.CSV", 'w', encoding="utf-8") as a_file:
         for done in zip(a_out, a_state):
             a_file.write(
-                    '"{}","{}","{}","{}"\n'.format(argv[1], u, done[1], done[0]))
+                    f'"{argv[1]}","{u}","{done[1]}","{done[0]}"\n')
