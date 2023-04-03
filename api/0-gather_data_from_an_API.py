@@ -13,9 +13,9 @@ if __name__ == "__main__":
     un = 0
 
     r_name = requests.get(
-            'https://jsonplaceholder.typicode.com/users?id={}'.format(argv[1]))
+            f"https://jsonplaceholder.typicode.com/users?id={argv[1]}")
     r_todos = requests.get(
-            "https://jsonplaceholder.typicode.com/todos?userId={}".format(argv[1]))
+            f"https://jsonplaceholder.typicode.com/todos?userId={argv[1]}")
 
     for record in r_todos.json():
         if record.get('completed') is True:
@@ -31,4 +31,4 @@ if __name__ == "__main__":
     print("Employe {}".format(r_name.json()[0].get('name')), end="")
     print("is done with tasks({}/{}):".format(do, do + un))
     for done in a_out:
-        print("    {}".format(done))
+        print("\t {}".format(done))
