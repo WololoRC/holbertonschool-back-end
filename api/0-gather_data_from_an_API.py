@@ -28,7 +28,7 @@ if __name__ == "__main__":
     if do == 0:
         quit()
 
-    print("Employe {}".format(r_name.json()[0].get('name')), end="")
-    print("is done with tasks({}/{}):".format(do, do + un))
+    print("Employee {}".format(r_name.json()[0].get('name')), end="")
+    print(" is done with tasks({}/{}):".format(do, do + un))
     for done in a_out:
         print("\t {}".format(done))
