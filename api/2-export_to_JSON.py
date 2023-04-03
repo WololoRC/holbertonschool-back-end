@@ -3,9 +3,9 @@
 Gather data from JSONPlacehole with input
 and export it ona JSON file.
 """
-import requests
 from sys import argv
 import json
+import requests
 
 
 if __name__ == "__main__":
