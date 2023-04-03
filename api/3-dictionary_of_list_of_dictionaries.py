@@ -5,8 +5,8 @@ and export it on a JSON file.
 
 This script takes all the data from DB.
 """
-import requests
 import json
+import requests
 
 
 if __name__ == "__main__":
