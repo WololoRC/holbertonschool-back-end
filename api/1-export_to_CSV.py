@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     u = r_name.json()[0].get('username')
 
-    with open(f"{argv[1]}.CSV", 'w', encoding="utf-8") as a_file:
+    with open(f"{argv[1]}.csv", 'w', encoding="utf-8") as a_file:
         for done in zip(a_out, a_state):
             a_file.write(
                     f'"{argv[1]}","{u}","{done[1]}","{done[0]}"\n')
